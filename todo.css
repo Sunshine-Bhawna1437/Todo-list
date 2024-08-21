@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0;
+    width: 250px;
+    background-image: url(todolist.avif);
+}
+.header {
+    background-color: transparent;
+    padding: 30px 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 1528px;
+    height: 200px;
+
+  }
+  .header input{
+    height: 49px;
+    width: 700px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   margin-bottom: 20px;
+   /* box-shadow:8px 10px 15px rgba(243, 6, 6, 0.929); */
+   bottom: 50px;
+
+  }
+  input {
+    margin: 0;
+    border: none;
+    width: 60%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    left: -10px;
+    top: 0px;
+    
+  }
+
+  .button{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background-color: #64d459;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right:333px;
+    bottom: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  /* box-shadow:8px 10px 15px rgba(69, 69, 68, 0.929); */
+
+
+
+  }
+  .header h2 {
+    /* text-shadow: 2px 2px 15px rgba(226, 12, 12, 0.929); */
+    font-size: 100px;
+    margin-top: 10px;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    right: 500px;
+    top: -20px;
+    
+  
+  }
+   
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    /* padding: 12px 8px 12px 40px; */
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  li{
+    margin-bottom: 5px;
+    border-radius: 15px;
+    width:700px;
+    height: 0px;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(even) {
+    /* background: #7ac6f2; */
+    height: 47px;
+
+   
+    
+    
+  }
+  ul li:nth-child(odd) {
+    background: #f6f7f8;
+    height: 47px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #bcf2a5;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 0px;
+    width: 7px;
+    gap: 20px;
+  }
+   
+  .delete {
+    float: right;
+    cursor: pointer;
+    color: red;
+  }
